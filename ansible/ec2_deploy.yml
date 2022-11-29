@@ -11,7 +11,7 @@
         key_name: test
         vpc_subnet_id: subnet-057db35b078d09269
         count: 1
-        asign_public_ip: yes
+        assign_public_ip: yes
         wait: yes
         aws_access_key: "{{ access_key }}"
         aws_secret_key: "{{ secret_key }}"
