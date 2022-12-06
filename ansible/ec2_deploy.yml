@@ -60,10 +60,10 @@
 
     - name: Get project files from Git
       git:
-        repo: 'https://github.com/mvnuk/4IT572_docker'
+        repo: 'https://github.com/mvnuk/4IT572_docker.git'
         dest: ./app
     - name: Build docker image
-      shell: cd app && docker build -t myeshop:latest .
+      shell: cd app && docker build -t myeshop:latest -f DockerFile .
       become: yes
     - name: Run eshop
       shell: docker run -p 80:3000 myeshop
